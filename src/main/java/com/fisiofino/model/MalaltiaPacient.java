@@ -1,13 +1,42 @@
-
 package com.fisiofino.model;
 
 public class MalaltiaPacient {
-
+    private int idDiagnosis;
+    private int idPatient;
     private String dniPacient;
+    private String nomPacient;
+    private String cognomsPacient;
     private String code;
     private String name;
     private String status;
     private String treatment;
+
+    public MalaltiaPacient() {
+    }
+
+    public MalaltiaPacient(String dniPacient, String code, String name, String status, String treatment) {
+        this.dniPacient = dniPacient;
+        this.code = code;
+        this.name = name;
+        this.status = status;
+        this.treatment = treatment;
+    }
+
+    public int getIdDiagnosis() {
+        return idDiagnosis;
+    }
+
+    public void setIdDiagnosis(int idDiagnosis) {
+        this.idDiagnosis = idDiagnosis;
+    }
+
+    public int getIdPatient() {
+        return idPatient;
+    }
+
+    public void setIdPatient(int idPatient) {
+        this.idPatient = idPatient;
+    }
 
     public String getDniPacient() {
         return dniPacient;
@@ -15,6 +44,22 @@ public class MalaltiaPacient {
 
     public void setDniPacient(String dniPacient) {
         this.dniPacient = dniPacient;
+    }
+
+    public String getNomPacient() {
+        return nomPacient;
+    }
+
+    public void setNomPacient(String nomPacient) {
+        this.nomPacient = nomPacient;
+    }
+
+    public String getCognomsPacient() {
+        return cognomsPacient;
+    }
+
+    public void setCognomsPacient(String cognomsPacient) {
+        this.cognomsPacient = cognomsPacient;
     }
 
     public String getCode() {
