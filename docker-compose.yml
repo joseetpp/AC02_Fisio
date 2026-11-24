@@ -1,0 +1,11 @@
+# Base de dades PostgreSQL només per als tests (port 5433).
+# Arrencar: docker compose up -d      Aturar: docker compose down
+services:
+  postgres-test:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: fisiofino_test
+      POSTGRES_USER: fisiofino
+      POSTGRES_PASSWORD: fisiofino
+    ports:
+      - "5433:5432"
